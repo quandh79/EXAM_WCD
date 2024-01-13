@@ -57,10 +57,10 @@ System.out.print(fullName);
         EmployeeEntity newEmployee = new EmployeeEntity(fullName,birthday,address,position,department);
 
 
-        // Gọi phương thức tạo nhân viên mới từ EmployeeDAO
+       
         employeeDAO.createEmployee(newEmployee);
 
-        // Sau khi tạo thành công, chuyển hướng trở lại trang danh sách nhân viên
+        
         resp.sendRedirect(req.getContextPath()+"/employee/list");
     }
 }
